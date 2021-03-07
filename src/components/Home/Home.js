@@ -6,8 +6,9 @@ import './Home.css'
 //import Aos from 'aos';
 import 'aos/dist/aos.css'
 import AnimatedCursor from 'react-very-cool-cursor';
-import ReactRotatingText from 'react-rotating-text';
+//import ReactRotatingText from '../../../node_modules/react-rotating-text/dist/ReactRotatingText';
 //var ReactRotatingText = require('react-rotating-text');
+import ReactRotatingText from 'react-rotating-text';
 function Home() {
 
     // useEffect(() =>{
@@ -15,12 +16,13 @@ function Home() {
     // }, []);
     return (
         <div className="home" id="home" >
-             <ReactRotatingText items={['Hi I am Tanya', 'Hey you look Awesome', 'I understand binary Language']} />
-            {/* <ReactRotatingText items={['first', 'second', 'third']} /> */}
+             <ReactRotatingText items={["Hi I am Tanya", "Hey you look Awesome", "I understand binary Language","My hobby is to chill with my laptop"]} />
+           
             <AnimatedCursor
       innerSize={20}
       outerSize={20}
-      color='193, 11, 111'
+    //    color='193, 11, 111'
+        color='70, 130, 180'
       outerAlpha={0.2}
       innerScale={0.7}
       outerScale={5}

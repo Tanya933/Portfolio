@@ -3,12 +3,22 @@ import  "./Projects.css";
 import pdata from './ProjectData.js';
 import {FaArrowRight,FaArrowLeft} from 'react-icons/fa';
 
-function Projects() {
 
-    const [current,setCurrent] = useState(0);
+// function Projects() {
+//         return(
+//             <>
+//             <div>Projects</div>
+                
+//             <>
+//         );
+// }
+
+ function Projects() { 
+
+   const [current,setCurrent] = useState(0);
     const length = pdata.length;
 
-    const nextSlide = ()=>{
+    const nextSlide = ()=>{ 
         setCurrent(current === length-1 ? 0 : current+1);
     }
 
